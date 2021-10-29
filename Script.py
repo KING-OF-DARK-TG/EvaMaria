@@ -9,14 +9,14 @@ class script(object):
      """
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """<b>♡︎ ᴍʏ ɴᴀᴍᴇ: ×͜× M̶ꪖ𝘳𝘴ꫝꪑꫀꪶꪶꪮ ×͜×
-♡︎ ᴄʀᴇᴀᴛᴏʀ: 𝙿ᴇ𝙰ᴄ𝙴-𝙵ɪ𝙶ʜ𝚃ᴇ𝚁-ᴛɢ
+    ABOUT_TXT = """<b>♡︎ ᴍʏ ɴᴀᴍᴇ: <a href='https://t.me/marshmelloo_Robot'>M̶ꪖ𝘳𝘴ꫝꪑꫀꪶꪶꪮ</a>
+♡︎ ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/peace_fighter_TG'>𝙿ᴇ𝙰ᴄ𝙴-𝙵ɪ𝙶ʜ𝚃ᴇ𝚁-ᴛɢ</a>
 ♡︎ ᴄʀᴇᴅɪᴛs: ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜɪs ᴊᴏᴜʀɴᴇʏ
-♡︎ ʟɪʙʀᴀʀʏ: ᴘʏʀᴏɢʀᴀᴍ ᴀsʏɴᴄɪᴏ
-♡︎ ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴᴇ 3
-♡︎ ᴅᴀᴛᴀ ʙᴀsᴇ: ᴍᴀɴɢᴏ ᴅʙ
-♡︎ ʙᴏᴛ sᴇʀᴠᴇʀ: ʜᴇʀᴏᴋᴜ
-♡︎ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ:ᴄʟɪᴄᴋ ᴍᴇ 👈
+♡︎ ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ ᴀsʏɴᴄɪᴏ</a>
+♡︎ ʟᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/'>ᴘʏᴛʜᴏɴᴇ 3</a>
+♡︎ ᴅᴀᴛᴀ ʙᴀsᴇ: <a href='https://www.mongodb.com/cloud'>ᴍᴀɴɢᴏ ᴅʙ</a>
+♡︎ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='https://heroku.com/'>ʜᴇʀᴏᴋᴜ</a>
+♡︎ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ: <a href='https://t.me/NOKIERUNNOIPPKITTUM'>ᴄʟɪᴄᴋ ᴍᴇ 👈</a>
 ♡︎ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: 𝚅7.6 [ ʙᴇᴛᴀ ]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
