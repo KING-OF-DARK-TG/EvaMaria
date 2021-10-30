@@ -64,8 +64,30 @@ async def give_filter(client,message):
                 break 
 
     else:
-        await auto_filter(client, message)   
+        await auto_filter(client, message) 
+         
+    else:
+        a = await client.get_chat_member(message.chat.id, message.from_user.id)
+         if ((a.status == "adminstrator") or (a.status == "creator")):
+                   return
+            else:
+                msg = await message.reply_text(text="""
+                              <b>Hello {} I could not find the movie you asked for...
 
+                 Google, IMDB Click on any button and find the <u>CORRECT MOVIE NAME</u> and enter it here but the movie will be available...</b>
+                """.format(message.from_user.mention),
+                     parse_mode="html",
+                              
+                reply_markup=InlineKeyboardMarkup(
+                           [
+                              [
+                                 InlineKeyboardButton('🌟 ɪᴍᴅʙ 🌟', url='https://imdb.com'),
+                                 InlineKeyboardButton('⚡ ɢᴏᴏɢʟᴇ ⚡️', url='https://www.google.com')
+                                ]
+                              ]
+                           )
+                        )
+         
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
 
