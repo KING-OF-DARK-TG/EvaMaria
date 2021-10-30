@@ -64,30 +64,8 @@ async def give_filter(client,message):
                 break 
 
     else:
-        await auto_filter(client, message) 
-         
-    else:
-        a = await client.get_chat_member(message.chat.id, message.from_user.id)
-         if ((a.status == "adminstrator") or (a.status == "creator")):
-               return
-            else:
-                msg = await message.reply_text(text="""
-                 <b>Hello {} I could not find the movie you asked for...
+        await auto_filter(client, message)   
 
-                 Google, IMDB Click on any button and find the <u>CORRECT MOVIE NAME</u> and enter it here but the movie will be available...</b>
-                """.format(message.from_user.mention),
-                     parse_mode="html",
-                              
-                reply_markup=InlineKeyboardMarkup(
-                           [
-                              [
-                                 InlineKeyboardButton('🌟 ɪᴍᴅʙ 🌟', url='https://imdb.com'),
-                                 InlineKeyboardButton('⚡ ɢᴏᴏɢʟᴇ ⚡️', url='https://www.google.com')
-                               ]
-                             ]
-                           )
-                        )
-         
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
 
@@ -384,7 +362,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/Marshmelloo_Robot?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/EvaMariaBot?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🕵‍♂ Creator', url='https://t.me/EvaMariaUpdates')
@@ -504,7 +482,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('🔄 Refresh', callback_data='rfrsh')
+            InlineKeyboardButton('♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -523,7 +501,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('🔄 Refresh', callback_data='rfrsh')
+            InlineKeyboardButton('♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -574,5 +552,5 @@ async def auto_filter(client, message):
         elif imdb:
             await message.reply_text(f"<b>🎬 Film/Series :<a href={imdb['url']}>{imdb.get('title')}</a>\n🌟 Rating : <a href={imdb['url']}/ratings>{imdb.get('rating')}</a>| IMDB\n📆 Release : <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🎭 Genres : {imdb.get('genres')}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(btn))
         else:
-            await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
         
