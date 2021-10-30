@@ -58,8 +58,7 @@ async def give_filter(client,message):
                             fileid,
                             caption=reply_text or "",
                             reply_markup=InlineKeyboardMarkup(button)
-                        )
-else:
+    else:
     msg = await message.reply_text(text="""
                  <b>Hello {} I could not find the movie you asked for...
 
