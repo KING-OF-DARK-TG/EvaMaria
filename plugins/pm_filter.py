@@ -59,12 +59,8 @@ async def give_filter(client,message):
                             caption=reply_text or "",
                             reply_markup=InlineKeyboardMarkup(button)
                         )
-    else:
-        a = await client.get_chat_member(message.chat.id, message.from_user.id)
-         if ((a.status == "adminstrator") or (a.status == "creator")):
-               return
-            else:
-                msg = await message.reply_text(text="""
+else:
+    msg = await message.reply_text(text="""
                  <b>Hello {} I could not find the movie you asked for...
 
                  Google, IMDB Click on any button and find the <u>CORRECT MOVIE NAME</u> and enter it here but the movie will be available...</b>
