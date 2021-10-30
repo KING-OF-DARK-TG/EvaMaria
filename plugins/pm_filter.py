@@ -69,10 +69,10 @@ async def give_filter(client,message):
     else:
         a = await client.get_chat_member(message.chat.id, message.from_user.id)
          if ((a.status == "adminstrator") or (a.status == "creator")):
-                   return
+               return
             else:
                 msg = await message.reply_text(text="""
-                              <b>Hello {} I could not find the movie you asked for...
+                 <b>Hello {} I could not find the movie you asked for...
 
                  Google, IMDB Click on any button and find the <u>CORRECT MOVIE NAME</u> and enter it here but the movie will be available...</b>
                 """.format(message.from_user.mention),
@@ -83,8 +83,8 @@ async def give_filter(client,message):
                               [
                                  InlineKeyboardButton('🌟 ɪᴍᴅʙ 🌟', url='https://imdb.com'),
                                  InlineKeyboardButton('⚡ ɢᴏᴏɢʟᴇ ⚡️', url='https://www.google.com')
-                                ]
-                              ]
+                               ]
+                             ]
                            )
                         )
          
