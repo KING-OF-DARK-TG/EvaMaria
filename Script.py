@@ -109,7 +109,7 @@ class script(object):
 ♡︎ 𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 = <code>{}</code>
 ♡︎ 𝙰𝙳𝙳𝙴𝙳 𝙱𝚈 - {}
 </b>"""
-    LOG_TEXT_P = """<b>#NewUser
+    LOG_TEXT_P = """<b>#𝙽𝙴𝚆𝚄𝚂𝙴𝚁
 ♡︎ 𝙸𝙳 - <code>{}</code>
 ♡︎ 𝙽𝙰𝙼𝙴 - {}
 </b>"""
