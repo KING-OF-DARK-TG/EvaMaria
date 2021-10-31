@@ -27,89 +27,89 @@ class script(object):
     """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
+- ғɪʟᴛᴇʀ ɪs ᴀ ғᴜᴇᴛᴜʀᴇ ᴡᴇʀᴇ ᴜsᴇʀs ᴄᴀɴ sᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟᴀʏ ғᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ᴍᴀʀsʜᴍᴇʟʟᴏ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪs ғᴏᴜɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ
 
 <b>NOTE:</b>
-1. eva maria should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+1. ᴍᴀʀsʜᴍᴇʟʟᴏ sʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟʟᴀɢᴇs.
+2. ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴀᴅᴅ ғɪʟᴛᴇʀs ɪɴ ᴀ ɢʀᴏᴜᴘ.
+3. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴ ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏғ 64 ᴄʜᴀʀᴀᴄᴛᴇʀ.
+
+<b>𝙲𝚊𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎𝚜:</b>
+• /filter - <code>ᴀᴅᴅ ᴀ ғɪʟᴛᴇʀ ɪɴ ᴄʜᴀᴛ</code>
+• /filters - <code>ʟɪsᴛ ᴀʟʟ ғɪʟᴛᴇʀs ᴏғ ᴀ ᴄʜᴀᴛ</code>
+• /del - <code>ᴅᴇʟᴇᴛᴇ ᴀ sᴘᴇᴄɪғɪᴄ ғɪʟᴛᴇʀ ɪɴ ᴄʜᴀᴛ</code>
+• /delall - <code>ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ғɪʟᴛᴇʀs ɪɴ ᴄʜᴀᴛ (ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ ᴏɴʟʏ)</code>"""
+    BUTTON_TXT = """Help: <b>𝙱𝚄𝚃𝚃𝙾𝙽𝚂</b>
+
+- ᴍᴀʀsʜᴍᴇʟʟᴏ sᴜᴘᴘɪʀᴛs ʙᴏᴛʜ ᴜʀʟ ᴀɴ ᴀʟᴇʀᴛ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴs.
+
+<b>𝙽𝙾𝚃𝙴:</b>
+1. Tᴇʟᴇɢʀᴀᴍ ᴡɪʟʟ ɴᴏᴛᴇ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ sᴇɴᴅ ʙᴜᴛᴛᴏɴs ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴄᴏɴᴛᴇɴᴛs.sᴏ ᴄᴏɴᴛᴇɴᴛ ɪs ᴍᴀɴᴅᴀᴛᴏʀʏ.
+2. ᴍᴀʀsʜᴍᴇʟʟᴏ sᴜᴘᴘᴏʀᴛs ʙᴜᴛᴛᴏɴs ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
+3. ʙᴜᴛᴛᴏɴs sʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀsᴇᴅ ᴀs ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴇ.
+
+<b>𝚄𝚁𝙻-𝙱𝚞𝚝𝚝𝚘𝚗𝚜:</b>
+<code>[ʙᴜᴛᴛᴏɴ ᴛᴇxᴛ](buttonurl:https//t.me/Marshmelloo_Robot)</code>
+
+<b>𝙰𝚕𝚎𝚛𝚝 𝙱𝚞𝚝𝚝𝚘𝚗𝚜:</b>
+<code>[ʙᴜᴛᴛᴏɴ ᴛᴇxᴛ](buttonalert:This is an alert message)</code>"""
+    AUTOFILTER_TXT = """𝙷𝙴𝙻𝙿: <b>𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁</b>
+
+<b>𝙽𝙾𝚃𝙴:</b>
+1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏғ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪғ ɪᴛs ᴘʀɪᴠᴀᴛᴇ.
+2. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇs ɴᴏᴛᴄᴏɴᴛᴀɪɴs ᴄᴀᴍ ʀɪᴘs,ᴘᴏʀɴ ᴀɴᴅ ғᴀᴋᴇ ғɪʟᴇs.
+3. ғᴏʀᴡᴀʀᴅ ᴍᴇ ᴛʜᴇ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ғʀᴏᴍᴇ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ǫᴜᴇᴛᴇs.
+ ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ғɪʟᴇs ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ."""
+    CONNECTION_TXT = """𝙷𝙴𝙻𝙿: <b>𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂</b>
+
+- ᴜsᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʙᴏᴛ ᴛᴏ ᴘᴍ ғᴏʀ ᴍᴀɴᴀɢɪɴɢ ғɪʟᴛᴇʀs ɪɴ ᴄʜᴀᴛ.
+- ɪᴛ ʜᴇʟᴘs ᴛᴏ ᴀᴠᴏɪᴅᴇ sᴘᴀᴍɪɴɢ ɪɴ ɢʀᴏᴜᴘ.
+
+<b>𝙽𝙾𝚃𝙴:</b>
+1. ᴏɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
+2. Sᴇɴᴅ <code>/connect</code> ғᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ.
+
+<b>𝙲𝙰𝙼𝙼𝙰𝙽𝙳𝚂 𝙰𝙽𝙳 𝚄𝚂𝙰𝙶𝙴:</b>
+• /connect  - <code>ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ</code>
+• /disconnect  - <code>ᴅɪsᴄᴏɴɴᴇᴄᴛ ғʀᴏᴍᴇ ᴀ ᴄʜᴀᴛ</code>
+• /connections - <code>ʟɪsᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴs</code>"""
+    EXTRAMOD_TXT = """𝙷𝙴𝙻𝙿: <b>𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳𝚄𝙻𝙴𝚂</b>
+
+<b>𝙽𝙾𝚃𝙴:</b>
+ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ғᴇᴜᴛᴜʀᴇs ᴏғ ᴍᴀʀsʜᴍᴇʟʟᴏ
+
+<b>𝙲𝙰𝙼𝙼𝙰𝙽𝙳𝚂 𝙰𝙽𝙳 𝚄𝚂𝙰𝙶𝙴𝚂:</b>
+• /id - <code>ɢᴇᴛ ɪᴅ ᴏғ ᴀ sᴘᴇᴄɪғɪᴄ ᴜsᴇʀ.</code>
+• /info  - <code>ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜsᴇʀ.</code>
+• /imdb  - <code>ɢᴇᴛ ᴛʜᴇ ғɪʟᴍ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ғʀᴏᴍᴇ ɪᴍᴅʙ sᴏᴜʀᴄᴇ.</code>
+• /search  - <code>ɢᴇᴛ ᴛʜᴇ ғɪʟᴍ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ғʀᴏᴍᴇ ᴠᴀʀɪᴏᴜs sᴏᴜʀᴄᴇs.</code>"""
+    ADMIN_TXT = """𝙷𝙴𝙻𝙿: <b>𝙰𝙳𝙼𝙸𝙽 𝙼𝙾𝙳𝙴𝚂</b>
+
+<b>𝙽𝙾𝚃𝙴:</b>
+ᴛʜɪs ᴍᴏᴅᴜʟᴇs ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ ᴀᴅᴍɪɴs.
 
 <b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
-
-- Eva Maria Supports both url and alert inline buttons.
-
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
-
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https//t.me/EvaMariaBot)</code>
-
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
-
-<b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains cam rip, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
-    CONNECTION_TXT = """Help: <b>Connections</b>
-
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
-
-<b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
-
-<b>Commands and Usage:</b>
-• /connect  - <code>connect a particular chat to your PM</code>
-• /disconnect  - <code>disconnect from a chat</code>
-• /connections - <code>list all your connections</code>"""
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
-
-<b>NOTE:</b>
-these are the extra features of tessa
-
-<b>Commands and Usage:</b>
-• /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
-
-<b>NOTE:</b>
-This module only works for my admins
-
-<b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
+• /logs - <code>ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʙᴏᴛ ʟᴏɢs</code>
+• /stats - <code>ᴛᴏ ɢᴇᴛ sᴛᴀᴛᴜs ᴏғ ғɪʟᴇs ɪɴ ᴅʙ.</code>
+• /users - <code>ᴛᴏ ɢᴇᴛ ʟɪsᴛ ᴏғ ᴍʏ ᴜsᴇʀs ᴀɴᴅ ɪᴅs.</code>
+• /chats - <code>ᴛᴏ ɢᴇᴛ ʟɪsᴛ ᴏғ ᴍʏ ᴄʜᴀᴛs ᴀɴᴅ ɪᴅs </code>
+• /leave  - <code>ᴛᴏ ʟᴇᴀᴠᴇ ғʀᴏᴍᴇ ᴀ ᴄʜᴀᴛ.</code>
+• /disable  -  <code>ᴛᴏ ᴅɪsᴀʙʟᴇ ᴀ ᴄʜᴀᴛ.</code>
+• /ban  - <code>ᴛᴏ ʙᴀɴ ᴀ ᴜsᴇʀ.</code>
+• /unban  - <code>ᴛᴏ ᴜɴᴅᴀɴ ᴀ ᴜsᴇʀ.</code>
+• /channel - <code>ᴛᴏ ɢᴇᴛ ʟɪsᴛ ᴏғ ᴛᴏᴛᴀʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟs</code>
+• /broadcast - <code>ᴛᴏ ʙʀᴏᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜsᴇʀs</code>"""
+    STATUS_TXT = """<b>★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
-    LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
-"""
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
-"""
+★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱</b>"""
+    LOG_TEXT_G = """<b>#𝙽𝙴𝚆𝙶𝚁𝙾𝚄𝙿
+♡︎ 𝙶𝚁𝙾𝚄𝙿 = {}(<code>{}</code>)
+♡︎ 𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 = <code>{}</code>
+♡︎ 𝙰𝙳𝙳𝙴𝙳 𝙱𝚈 - {}
+</b>"""
+    LOG_TEXT_P = """<b>#NewUser
+♡︎ 𝙸𝙳 - <code>{}</code>
+♡︎ 𝙽𝙰𝙼𝙴 - {}
+</b>"""
