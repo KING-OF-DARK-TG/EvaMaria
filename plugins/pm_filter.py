@@ -58,23 +58,7 @@ async def give_filter(client,message):
                             fileid,
                             caption=reply_text or "",
                             reply_markup=InlineKeyboardMarkup(button)
-    else:
-                           
-        msg = await message.reply_text(
-             text=""" <b>Hello {} I could not find the movie you asked for...
-
-                 Google, IMDB Click on any button and find the <u>CORRECT MOVIE NAME</u> and enter it here but the movie will be available...</b>
-                """.format(message.from_user.mention),
-                parse_mode="html",                              
-                reply_markup=InlineKeyboardMarkup(
-                           [
-                              [
-                                 InlineKeyboardButton('🌟 ɪᴍᴅʙ 🌟', url='https://imdb.com'),
-                                 InlineKeyboardButton('⚡ ɢᴏᴏɢʟᴇ ⚡️', url='https://www.google.com')
-                               ]
-                             ]
-                           )
-                        )
+    
                 except Exception as e:
                     print(e)
                 break 
