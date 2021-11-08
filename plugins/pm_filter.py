@@ -20,6 +20,14 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
+TRATING = ["5.1 | IMDB", "6.2 | IMDB", "7.3 | IMDB", "8.4 | IMDB", "9.5 | IMDB", ]
+TGENRES = ["fun, fact",
+          "Thriller, Comedy",
+          "Drama, Comedy",
+          "Family, Drama",
+          "Film Noir",
+          "Action, Adventure",
+          "Documentary"]
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client,message):
